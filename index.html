@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="es"><head>
+<html lang="es">
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OP Juan Miguel Mendoza — Transtools</title>
+  <title>OP JUAN MIGUEL MENDOZA — Transtools</title>
   <!-- PERSISTENT DATA STORAGE -->
-  <script id="op-data" type="application/json">{"10":[{"view":"inferior","x":"89.02","y":"55.52","tx":"61.88","ty":"55.52"}],"13":[{"view":"inferior","x":"7.32","y":"43.52","tx":"38.54","ty":"44.27"}],"14":[{"view":"inferior","x":"89.17","y":"67.52","tx":"69.90","ty":"62.52"}],"15":[{"view":"isometrica","x":"93.38","y":"45.77","tx":"78.34","ty":"45.77"}],"16":[{"view":"isometrica","x":"93.38","y":"57.77","tx":"91.84","ty":"56.27"}],"17":[{"view":"lateral-izq","x":"6.20","y":"63.77","tx":"39.95","ty":"63.02"}],"18":[{"view":"lateral-izq","x":"6.48","y":"79.02","tx":"44.87","ty":"73.77"}],"01":[{"view":"isometrica","x":"93.24","y":"12.52","tx":"91.98","ty":"9.52"}],"02":[{"view":"isometrica","x":"93.38","y":"22.77","tx":"91.27","ty":"19.27"}],"03":[{"view":"inferior","x":"89.45","y":"9.02","tx":"59.92","ty":"38.27"}],"05":[{"view":"isometrica","x":"93.24","y":"33.52","tx":"91.84","ty":"32.02"}],"07":[{"view":"lateral-izq","x":"7.32","y":"12.27","tx":"7.32","ty":"47.77"}],"06":[{"view":"lateral-izq","x":"27.29","y":"12.02","tx":"27.43","ty":"40.52"},{"view":"lateral-izq","x":"17.45","y":"12.27","tx":"17.59","ty":"36.27"}],"08":[{"view":"lateral-izq","x":"35.17","y":"12.27","tx":"59.92","ty":"26.02"}],"09":[{"view":"inferior","x":"7.18","y":"59.77","tx":"45.57","ty":"54.27"}]}</script>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&amp;family=Barlow:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+  <script id="op-data"
+    type="application/json">{"10":[{"view":"inferior","x":"89.02","y":"55.52","tx":"61.88","ty":"55.52"}],"12":[{"view":"isometrica","x":"93.52","y":"46.27","tx":"92.12","ty":"42.52"}],"13":[{"view":"inferior","x":"7.32","y":"43.52","tx":"38.54","ty":"44.27"}],"14":[{"view":"inferior","x":"89.17","y":"67.52","tx":"69.90","ty":"62.52"}],"15":[{"view":"isometrica","x":"93.67","y":"58.27","tx":"78.34","ty":"45.77"}],"16":[{"view":"isometrica","x":"93.52","y":"69.02","tx":"92.54","ty":"66.77"}],"17":[{"view":"lateral-izq","x":"6.20","y":"63.77","tx":"39.95","ty":"63.02"}],"18":[{"view":"lateral-izq","x":"6.48","y":"79.02","tx":"44.87","ty":"73.77"}],"01":[{"view":"isometrica","x":"93.24","y":"12.52","tx":"91.98","ty":"9.52"}],"02":[{"view":"isometrica","x":"93.38","y":"22.77","tx":"91.27","ty":"19.27"}],"03":[{"view":"inferior","x":"89.45","y":"9.02","tx":"59.92","ty":"38.27"}],"05":[{"view":"isometrica","x":"93.24","y":"33.52","tx":"91.84","ty":"32.02"}],"07":[{"view":"lateral-izq","x":"7.32","y":"12.27","tx":"7.32","ty":"47.77"}],"06":[{"view":"lateral-izq","x":"27.29","y":"12.02","tx":"27.43","ty":"40.52"},{"view":"lateral-izq","x":"17.45","y":"12.27","tx":"17.59","ty":"36.27"}],"08":[{"view":"lateral-izq","x":"35.17","y":"12.27","tx":"59.92","ty":"26.02"}],"09":[{"view":"inferior","x":"7.18","y":"59.77","tx":"45.57","ty":"54.27"}]}</script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&amp;family=Barlow:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" href="img/Transtools.png">
   <style>
     :root {
@@ -1755,7 +1760,8 @@
 
     <!-- Mobile floating toggle button -->
     <button id="mobileMenuToggle" title="Abrir Menú">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round">
         <line x1="3" y1="12" x2="21" y2="12"></line>
         <line x1="3" y1="6" x2="21" y2="6"></line>
         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -1768,7 +1774,8 @@
       <!-- Rail: always visible -->
       <div class="sidebar-rail">
         <button class="rail-btn" id="sidebarToggle" title="Menú">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -1776,32 +1783,40 @@
         </button>
         <div class="rail-divider"></div>
         <button class="rail-btn" data-zone="estructura" title="Estructura / Acero">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
             </path>
           </svg>
         </button>
-        <button class="rail-btn" data-zone="refacciones" title="Refacciones / Accesorios">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+        <button class="rail-btn is-active" data-zone="refacciones" title="Refacciones / Accesorios">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
             </path>
           </svg>
         </button>
         <button class="rail-btn" data-zone="suspension" title="Suspensión y Neumática">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="3"></circle>
             <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path>
-            <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+            <path
+              d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
             </path>
           </svg>
         </button>
-        <button class="rail-btn is-active" data-zone="electrico" title="Eléctrico / Publicidad">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <button class="rail-btn" data-zone="electrico" title="Eléctrico / Publicidad">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
           </svg>
         </button>
         <button class="rail-btn" data-zone="adicionales" title="Adicionales / Cambios">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
             <polyline points="14 2 14 8 20 8"></polyline>
             <line x1="12" y1="18" x2="12" y2="12"></line>
@@ -1810,7 +1825,8 @@
         </button>
         <div class="rail-spacer"></div>
         <button class="rail-btn" id="sidebarCollapse" title="Colapsar">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
         </button>
@@ -1823,31 +1839,40 @@
           <div class="drawer-header">
             <div class="drawer-zone-label" style="display:flex; justify-content:space-between; align-items:center;">
               <span>Configuración por Zona</span>
-              <span id="drawerZoneCount" style="color:var(--brand-navy); font-weight:700;">2/16 items</span>
+              <span id="drawerZoneCount" style="color:var(--brand-navy); font-weight:700;">5/16 items</span>
             </div>
             <div class="drawer-zone-name" id="drawerZoneName">
-              <span class="drawer-zone-dot" id="drawerZoneDot" style="background: var(--green);"></span>
-              <span id="drawerZoneText" style="color: var(--green);">Eléctrico / Publicidad</span>
+              <span class="drawer-zone-dot" id="drawerZoneDot" style="background: var(--purple);"></span>
+              <span id="drawerZoneText" style="color: var(--purple);">Refacciones / Accesorios</span>
             </div>
           </div>
 
           <!-- Estructura -->
           <div class="zone-items" data-zone="estructura">
-            <div class="cfg-row is-placed" id="row-01" data-desc="KIT PLACAS DOLLY ANCHO-2E- ESTANDAR 1" data-id="5109398982" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5109398982" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-01" data-desc="KIT PLACAS DOLLY ANCHO-2E- ESTANDAR 1"
+              data-id="5109398982"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5109398982"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">01</div>
               <div class="cfg-desc"><strong>1.- ACERO DE ESTRUCTURA PLACAS</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-02" data-desc="KIT PERFILES DOLLY ANCHO-2E-ESTANDAR 1" data-id="5127259972" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5127259972" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-02" data-desc="KIT PERFILES DOLLY ANCHO-2E-ESTANDAR 1"
+              data-id="5127259972"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5127259972"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">02</div>
               <div class="cfg-desc"><strong>2.- ACERO DE ESTRUCTURA PERFILES</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-03" data-desc="KIT DE ACERO PARA SUSPENSIÓN TRANSTOOLS (TIPO HT300)-1 EJE" data-id="5073815682" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5073815682" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-03"
+              data-desc="KIT DE ACERO PARA SUSPENSIÓN TRANSTOOLS (TIPO HT300)-1 EJE" data-id="5073815682"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5073815682"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">03</div>
               <div class="cfg-desc"><strong>3.- ACERO SUSPENSION</strong></div>
               <div class="cfg-qty">2</div>
@@ -1858,31 +1883,49 @@
           </div>
 
           <!-- Refacciones -->
-          <div class="zone-items" data-zone="refacciones">
-            <div class="cfg-row is-placed" id="row-05" data-desc="KIT DE CONSUMIBLES DOLLY" data-id="5151282024" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5151282024" title="Puedes agregarlo una vez más">
+          <div class="zone-items active" data-zone="refacciones">
+            <div class="cfg-row is-placed" id="row-05" data-desc="KIT DE CONSUMIBLES DOLLY" data-id="5151282024"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5151282024"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">05</div>
               <div class="cfg-desc"><strong>5.- CONSUMIBLES DOLLY</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-exhausted" id="row-06" data-desc="KIT REFACCIONES DOLLY A" data-id="5141516985" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5141516985" title="Ya no se pueden agregar más elementos de este item">
+            <div class="cfg-row is-exhausted" id="row-06" data-desc="KIT REFACCIONES DOLLY A" data-id="5141516985"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5141516985"
+              title="Ya no se pueden agregar más elementos de este item">
               <div class="cfg-num">06</div>
               <div class="cfg-desc"><strong>6.- REFACCIONES DOLLY</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-07" data-desc="KIT ARGOLLA HOLLAND DE 6 BARRENOS PARA DOLLY TIPO A" data-id="5140799734" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5140799734" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-07" data-desc="KIT ARGOLLA HOLLAND DE 6 BARRENOS PARA DOLLY TIPO A"
+              data-id="5140799734"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5140799734"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">07</div>
               <div class="cfg-desc"><strong>7.- ARGOLLA, REFACCIONES</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-08" data-desc="KIT QUINTA RUEDA HOLLAND FW-35" data-id="5132452567" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5132452567" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-08" data-desc="KIT QUINTA RUEDA HOLLAND FW-35" data-id="5132452567"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5132452567"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">08</div>
               <div class="cfg-desc"><strong>8.- QUINTA RUEDA, REFACCIONES</strong></div>
+              <div class="cfg-qty">1</div>
+              <div class="cfg-link"></div>
+              <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
+            </div>
+            <div class="cfg-row is-placed" id="row-12" data-desc="KIT PINTURA PPG DOLLY" data-id="10854347299"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/10854347299"
+              title="Puedes agregarlo una vez más">
+              <div class="cfg-num">12</div>
+              <div class="cfg-desc"><strong>12.- PINTURA</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
@@ -1892,42 +1935,58 @@
 
           <!-- Suspensión -->
           <div class="zone-items" data-zone="suspension">
-            <div class="cfg-row is-placed" id="row-09" data-desc="KIT DE SUSPENSIÓN DE AIRE TRANSTOOLS 1 EJE REFACCIONES" data-id="4863078214" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/4863078214" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-09"
+              data-desc="KIT DE SUSPENSIÓN DE AIRE TRANSTOOLS 1 EJE REFACCIONES" data-id="4863078214"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/4863078214"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">09</div>
               <div class="cfg-desc"><strong>9.- SUSPENSION DE AIRE, REFACCIONES</strong></div>
               <div class="cfg-qty">2</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-10" data-desc="KIT DE EJES GRASA 77.5 BIRLO CORTO TAPA NEGRA AMPRO" data-id="5110666707" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5110666707" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-10" data-desc="KIT DE EJES GRASA 77.5 BIRLO CORTO TAPA NEGRA AMPRO"
+              data-id="5110666707"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5110666707"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">10</div>
               <div class="cfg-desc"><strong>10.- EJES</strong></div>
               <div class="cfg-qty">2</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-13" data-desc="KIT DE SISTEMA DE FRENOS DOLLY A" data-id="5132604675" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5132604675" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-13" data-desc="KIT DE SISTEMA DE FRENOS DOLLY A" data-id="5132604675"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5132604675"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">13</div>
               <div class="cfg-desc"><strong>13.- SISTEMA NEUMATICO FRENOS</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-14" data-desc="KIT SISTEMA DE AIRE PARA SUSPENCIÓN DOLLY A" data-id="5165255612" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5165255612" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-14" data-desc="KIT SISTEMA DE AIRE PARA SUSPENCIÓN DOLLY A"
+              data-id="5165255612"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5165255612"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">14</div>
               <div class="cfg-desc"><strong>14.- SISTEMA NEUMATICO SUSPENSION</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-17" data-desc="KIT DE RINES AMPRO ACERO 24.5 -1 EJE" data-id="4920022916" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/4920022916" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-17" data-desc="KIT DE RINES AMPRO ACERO 24.5 -1 EJE"
+              data-id="4920022916"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/4920022916"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">17</div>
               <div class="cfg-desc"><strong>17.- RINES</strong></div>
               <div class="cfg-qty">2</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-18" data-desc="KIT DE LLANTA CHINA 24.5 - 1 EJE" data-id="4919898235" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/4919898235" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-18" data-desc="KIT DE LLANTA CHINA 24.5 - 1 EJE" data-id="4919898235"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/4919898235"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">18</div>
               <div class="cfg-desc"><strong>18.- LLANTAS</strong></div>
               <div class="cfg-qty">2</div>
@@ -1938,15 +1997,21 @@
           </div>
 
           <!-- Eléctrico -->
-          <div class="zone-items active" data-zone="electrico">
-            <div class="cfg-row is-placed" id="row-15" data-desc="KIT SISTEMA ELECTRICO DOLLY PLAFONES REDONDOS" data-id="5520207155" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5520207155" title="Puedes agregarlo una vez más">
+          <div class="zone-items" data-zone="electrico">
+            <div class="cfg-row is-placed" id="row-15" data-desc="KIT SISTEMA ELECTRICO DOLLY PLAFONES REDONDOS"
+              data-id="5520207155"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5520207155"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">15</div>
               <div class="cfg-desc"><strong>15.- SISTEMA ELECTRICO</strong></div>
               <div class="cfg-qty">1</div>
               <div class="cfg-link"></div>
               <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
             </div>
-            <div class="cfg-row is-placed" id="row-16" data-desc="KIT PUBLICIDAD DOLLY &quot;A&quot;" data-id="5127321072" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5127321072" title="Puedes agregarlo una vez más">
+            <div class="cfg-row is-placed" id="row-16" data-desc="KIT PUBLICIDAD DOLLY &quot;A&quot;"
+              data-id="5127321072"
+              data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/5127321072"
+              title="Puedes agregarlo una vez más">
               <div class="cfg-num">16</div>
               <div class="cfg-desc"><strong>16.- PUBLICIDAD</strong></div>
               <div class="cfg-qty">1</div>
@@ -1958,13 +2023,6 @@
 
           <!-- Adicionales / Cambios -->
           <div class="zone-items" data-zone="adicionales">
-            <div class="cfg-row" id="row-12" data-desc="KIT PINTURA PPG DOLLY" data-id="10854347299" data-monday-url="https://transtools-team.monday.com/boards/4753135434/pulses/10854347299">
-              <div class="cfg-num">12</div>
-              <div class="cfg-desc"><strong>12.- PINTURA</strong></div>
-              <div class="cfg-qty">1</div>
-              <div class="cfg-link"></div>
-              <button class="row-delete-btn" title="Borrar ítem de la lista">🗑️</button>
-            </div>
             <button class="btn-add-item" data-zone="adicionales">+ Nuevo Item</button>
           </div>
         </div><!-- /drawer-inner -->
@@ -1977,7 +2035,8 @@
       <div class="header">
         <div class="logo-area">
           <button id="headerMenuToggle" class="header-menu-btn" title="Menú">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -1993,7 +2052,7 @@
         <div class="header-dates">
           <div class="hd-row">Fecha Contrato: <span contenteditable="true">25/Mar/26</span></div>
           <div class="hd-row">Fecha Entrega: <span contenteditable="true">23/Abr/26</span></div>
-          <div class="hd-row">Última Actualización: <span contenteditable="true">27/Mar/26 16:32</span></div>
+          <div class="hd-row">Última Actualización: <span contenteditable="true">28/Mar/26 11:44</span></div>
           <button id="adminSaveBtn" class="admin-save-btn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
@@ -2022,7 +2081,8 @@
         <div class="cs-cell">
           <div class="cs-key">Color</div>
           <div style="color:var(--brand-black)">
-            <span style="display:inline-block; width:10px; height:10px; background-color:white; border:1px solid var(--brand-black); border-radius:50%; vertical-align: middle; margin-top: -2px; margin-right: 4px;"></span>
+            <span
+              style="display:inline-block; width:10px; height:10px; background-color:white; border:1px solid var(--brand-black); border-radius:50%; vertical-align: middle; margin-top: -2px; margin-right: 4px;"></span>
             <span style="color:var(--brand-black)">BLANCO</span> &nbsp;·&nbsp; PPG
           </div>
         </div>
@@ -2063,7 +2123,7 @@
         </div>
 
         <!-- VIEWS (Sticky via CSS) -->
-        <div class="views-panel active-electrico">
+        <div class="views-panel active-refacciones">
           <div class="views-grid">
             <div class="view-cell vc-isometrica" data-view="isometrica">
               <div class="vc-label">Vista Isométrica</div>
@@ -2091,13 +2151,16 @@
 
         <!-- CHECKLIST DE APROBACIÓN -->
         <div style="margin: 20px; border:1px solid var(--border); border-radius:5px; overflow:hidden;">
-          <div style="background:var(--navy); padding:6px 12px; font-family:'Barlow Condensed'; font-weight:700; font-size:11px; color:white; letter-spacing:1px; text-transform:uppercase;">
+          <div
+            style="background:var(--navy); padding:6px 12px; font-family:'Barlow Condensed'; font-weight:700; font-size:11px; color:white; letter-spacing:1px; text-transform:uppercase;">
             Checklist de Aprobación Final</div>
           <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:0;">
             <div style="padding:8px 12px; border-right:1px solid var(--border2);">
-              <div style="font-size:10px; font-weight:700; color:#F87171; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
+              <div
+                style="font-size:10px; font-weight:700; color:#F87171; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
                 Ventas</div>
-              <div style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
+              <div
+                style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
                 <div style="width:12px;height:12px;border:1px solid var(--border);border-radius:2px;flex-shrink:0;">
                 </div>Pedido confirmado
               </div>
@@ -2107,9 +2170,11 @@
               </div>
             </div>
             <div style="padding:8px 12px; border-right:1px solid var(--border2);">
-              <div style="font-size:10px; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
+              <div
+                style="font-size:10px; font-weight:700; color:var(--blue); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
                 Ingeniería</div>
-              <div style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
+              <div
+                style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
                 <div style="width:12px;height:12px;border:1px solid var(--border);border-radius:2px;flex-shrink:0;">
                 </div>Vistas validadas
               </div>
@@ -2119,9 +2184,11 @@
               </div>
             </div>
             <div style="padding:8px 12px; border-right:1px solid var(--border2);">
-              <div style="font-size:10px; font-weight:700; color:var(--green); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
+              <div
+                style="font-size:10px; font-weight:700; color:var(--green); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
                 Almacén</div>
-              <div style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
+              <div
+                style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
                 <div style="width:12px;height:12px;border:1px solid var(--border);border-radius:2px;flex-shrink:0;">
                 </div>Kits surtidos
               </div>
@@ -2131,9 +2198,11 @@
               </div>
             </div>
             <div style="padding:8px 12px;">
-              <div style="font-size:10px; font-weight:700; color:var(--orange); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
+              <div
+                style="font-size:10px; font-weight:700; color:var(--orange); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
                 Producción</div>
-              <div style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
+              <div
+                style="display:flex; align-items:center; gap:6px; font-size:10px; color:var(--dim); margin-bottom:2px;">
                 <div style="width:12px;height:12px;border:1px solid var(--border);border-radius:2px;flex-shrink:0;">
                 </div>Retráctiles ×2 OK
               </div>
@@ -2152,7 +2221,11 @@
         <div class="footer-addr">
           <div class="fa-web">
             <a href="https://www.transtools.com.mx" target="_blank">www.transtools.com.mx</a>
-            <span id="adminLockToggle" class="admin-lock" title="Modo Administrador"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
+            <span id="adminLockToggle" class="admin-lock" title="Modo Administrador"><svg width="14" height="14"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg></span>
           </div>
         </div>
         <div class="footer-sign">
@@ -3191,4 +3264,44 @@
 
 
 
-</body></html>
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+</body>
+
+</html>
